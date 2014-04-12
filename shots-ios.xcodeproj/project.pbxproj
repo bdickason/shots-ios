@@ -25,6 +25,7 @@
 		C083E96218F9C05300146148 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C083E96018F9C05300146148 /* README.md */; };
 		C083E96518F9C18D00146148 /* shotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C083E96418F9C18D00146148 /* shotModel.m */; };
 		C083E96618F9C18D00146148 /* shotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C083E96418F9C18D00146148 /* shotModel.m */; };
+		C08ECE3C18F9D1D900D6D7CE /* shareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08ECE3B18F9D1D900D6D7CE /* shareViewController.m */; };
 		CEDB167F6EB7433BBC836E8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F7DDC1874340CCAB11A556 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		C083E96018F9C05300146148 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C083E96318F9C18D00146148 /* shotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shotModel.h; sourceTree = "<group>"; };
 		C083E96418F9C18D00146148 /* shotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shotModel.m; sourceTree = "<group>"; };
+		C08ECE3A18F9D1D900D6D7CE /* shareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareViewController.h; sourceTree = "<group>"; };
+		C08ECE3B18F9D1D900D6D7CE /* shareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareViewController.m; sourceTree = "<group>"; };
 		CDF3B33115334E639329DA09 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +134,8 @@
 				C009D76B18F9BF8300429033 /* shotsAppDelegate.h */,
 				C009D76C18F9BF8300429033 /* shotsAppDelegate.m */,
 				C009D76E18F9BF8300429033 /* Main.storyboard */,
+				C08ECE3A18F9D1D900D6D7CE /* shareViewController.h */,
+				C08ECE3B18F9D1D900D6D7CE /* shareViewController.m */,
 				C009D77118F9BF8300429033 /* cameraViewController.h */,
 				C009D77218F9BF8300429033 /* cameraViewController.m */,
 				C009D77418F9BF8300429033 /* Images.xcassets */,
@@ -308,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08ECE3C18F9D1D900D6D7CE /* shareViewController.m in Sources */,
 				C009D76D18F9BF8300429033 /* shotsAppDelegate.m in Sources */,
 				C083E96518F9C18D00146148 /* shotModel.m in Sources */,
 				C009D77318F9BF8300429033 /* cameraViewController.m in Sources */,

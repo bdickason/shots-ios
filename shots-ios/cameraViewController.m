@@ -8,6 +8,8 @@
 
 #import "cameraViewController.h"
 
+#import "shareViewController.h"
+
 @interface cameraViewController ()
 
 @end
@@ -49,12 +51,20 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    // User selected a photo, handle it
+    // User selected a photo
     
+    // Store photo
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    [imageView setImage: image];    // Display the image
+//    [imageView setImage: image];
     
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    
+
+    // Call 'share' view
+    shareViewController *shareView = [self.storyboard instantiateViewControllerWithIdentifier:@"shareViewController"];
+    
+    [self presentViewController:shareView animated:YES completion:nil];
+    
+//    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
