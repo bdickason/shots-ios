@@ -14,7 +14,7 @@
 		C009D76918F9BF8300429033 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C009D76818F9BF8300429033 /* main.m */; };
 		C009D76D18F9BF8300429033 /* shotsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C009D76C18F9BF8300429033 /* shotsAppDelegate.m */; };
 		C009D77018F9BF8300429033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C009D76E18F9BF8300429033 /* Main.storyboard */; };
-		C009D77318F9BF8300429033 /* shotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C009D77218F9BF8300429033 /* shotsViewController.m */; };
+		C009D77318F9BF8300429033 /* cameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C009D77218F9BF8300429033 /* cameraViewController.m */; };
 		C009D77518F9BF8300429033 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C009D77418F9BF8300429033 /* Images.xcassets */; };
 		C009D77C18F9BF8300429033 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009D77B18F9BF8300429033 /* XCTest.framework */; };
 		C009D77D18F9BF8300429033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009D75C18F9BF8300429033 /* Foundation.framework */; };
@@ -51,8 +51,8 @@
 		C009D76B18F9BF8300429033 /* shotsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shotsAppDelegate.h; sourceTree = "<group>"; };
 		C009D76C18F9BF8300429033 /* shotsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shotsAppDelegate.m; sourceTree = "<group>"; };
 		C009D76F18F9BF8300429033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C009D77118F9BF8300429033 /* shotsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shotsViewController.h; sourceTree = "<group>"; };
-		C009D77218F9BF8300429033 /* shotsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shotsViewController.m; sourceTree = "<group>"; };
+		C009D77118F9BF8300429033 /* cameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cameraViewController.h; sourceTree = "<group>"; };
+		C009D77218F9BF8300429033 /* cameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cameraViewController.m; sourceTree = "<group>"; };
 		C009D77418F9BF8300429033 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C009D77A18F9BF8300429033 /* shots-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shots-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009D77B18F9BF8300429033 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,8 +131,8 @@
 				C009D76B18F9BF8300429033 /* shotsAppDelegate.h */,
 				C009D76C18F9BF8300429033 /* shotsAppDelegate.m */,
 				C009D76E18F9BF8300429033 /* Main.storyboard */,
-				C009D77118F9BF8300429033 /* shotsViewController.h */,
-				C009D77218F9BF8300429033 /* shotsViewController.m */,
+				C009D77118F9BF8300429033 /* cameraViewController.h */,
+				C009D77218F9BF8300429033 /* cameraViewController.m */,
 				C009D77418F9BF8300429033 /* Images.xcassets */,
 				C009D76318F9BF8300429033 /* Supporting Files */,
 				C083E96318F9C18D00146148 /* shotModel.h */,
@@ -310,7 +310,7 @@
 			files = (
 				C009D76D18F9BF8300429033 /* shotsAppDelegate.m in Sources */,
 				C083E96518F9C18D00146148 /* shotModel.m in Sources */,
-				C009D77318F9BF8300429033 /* shotsViewController.m in Sources */,
+				C009D77318F9BF8300429033 /* cameraViewController.m in Sources */,
 				C009D76918F9BF8300429033 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

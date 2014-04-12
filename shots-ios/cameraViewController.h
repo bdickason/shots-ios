@@ -1,5 +1,5 @@
 //
-//  shotsViewController.h
+//  cameraViewController.h
 //  shots-ios
 //
 //  Created by Bradley Dickason on 4/12/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface shotsViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface cameraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     
     UIImagePickerController *picker;
     UIImage *image;

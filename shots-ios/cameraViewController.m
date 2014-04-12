@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Bradley Dickason. All rights reserved.
 //
 
-#import "shotsViewController.h"
+#import "cameraViewController.h"
 
-@interface shotsViewController ()
+@interface cameraViewController ()
 
 @end
 
-@implementation shotsViewController
+@implementation cameraViewController
 
 - (IBAction)TakePhoto {
     // Opens the interface to snap a photo
@@ -48,12 +48,12 @@
     }
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     // User selected a photo, handle it
-
-    (NSDictionary *)info {
+    
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [imageView setImage: image];    // Display the image
+    
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
@@ -64,7 +64,7 @@
 
 - (void)viewDidAppear:(BOOL) Animated {
     // Wait for view to appear before accessing camera
-    [super viewDidAppear:YES];
+    [super viewDidAppear:Animated];
 
     // Open camera and allow user to take a photo
     [self TakePhoto];
