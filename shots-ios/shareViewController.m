@@ -9,12 +9,13 @@
 #import "shareViewController.h"
 
 @implementation shareViewController
+@synthesize image;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"got here");
+    [imageView setImage: image];
     
 }
 

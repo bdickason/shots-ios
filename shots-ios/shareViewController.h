@@ -10,9 +10,10 @@
 
 @interface shareViewController : UIViewController <UINavigationControllerDelegate> {
     NSString *url;
-    
-    UIImage *image; // Passed in from previous view
-    
+
+    IBOutlet UIImageView  *imageView;
 }
+
+@property(nonatomic) UIImage *image; // Passed in from previous view
 
 @end

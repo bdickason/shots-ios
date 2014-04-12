@@ -71,6 +71,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jFF-0i-lgn"/>
+                    <connections>
+                        <outlet property="imageView" destination="GYg-0r-Pc2" id="z1R-tg-AIp"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="519" y="31"/>

@@ -16,6 +16,15 @@
 
 @implementation cameraViewController
 
+- (void)viewDidAppear:(BOOL) Animated {
+    // Wait for view to appear before accessing camera
+    [super viewDidAppear:Animated];
+
+    // Open camera and allow user to take a photo
+    // We have to use performSelector here or there are issues with view manipulation
+    [self performSelector:@selector(TakePhoto) withObject:nil afterDelay:0.3f];
+}
+
 - (IBAction)TakePhoto {
     // Opens the interface to snap a photo
     
@@ -43,10 +52,10 @@
     // Store photo
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [imageView setImage: image];
-
+    
     [self dismissViewControllerAnimated:YES completion:^{
         // Transition to Share view
-       [self performSegueWithIdentifier: @"shareSegue" sender: self];
+        [self performSegueWithIdentifier: @"shareSegue" sender: self];
     }];
 }
 
@@ -55,25 +64,11 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)viewDidAppear:(BOOL) Animated {
-    // Wait for view to appear before accessing camera
-    [super viewDidAppear:Animated];
-
-    // Open camera and allow user to take a photo
-    // We have to use performSelector here or there are issues with view manipulation
-    [self performSelector:@selector(TakePhoto) withObject:nil afterDelay:0.3f];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"shareSegue"]){
+        shareViewController *controller = (shareViewController *)segue.destinationViewController;
+        controller.image = image;
+    }
 }
 
 @end
