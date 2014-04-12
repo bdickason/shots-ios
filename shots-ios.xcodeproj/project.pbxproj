@@ -23,6 +23,8 @@
 		C009D78818F9BF8300429033 /* shots_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C009D78718F9BF8300429033 /* shots_iosTests.m */; };
 		C083E96118F9C05300146148 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C083E95F18F9C05300146148 /* Podfile */; };
 		C083E96218F9C05300146148 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C083E96018F9C05300146148 /* README.md */; };
+		C083E96518F9C18D00146148 /* shotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C083E96418F9C18D00146148 /* shotModel.m */; };
+		C083E96618F9C18D00146148 /* shotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C083E96418F9C18D00146148 /* shotModel.m */; };
 		CEDB167F6EB7433BBC836E8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F7DDC1874340CCAB11A556 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		C009D78718F9BF8300429033 /* shots_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shots_iosTests.m; sourceTree = "<group>"; };
 		C083E95F18F9C05300146148 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		C083E96018F9C05300146148 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C083E96318F9C18D00146148 /* shotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shotModel.h; sourceTree = "<group>"; };
+		C083E96418F9C18D00146148 /* shotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shotModel.m; sourceTree = "<group>"; };
 		CDF3B33115334E639329DA09 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,8 @@
 				C009D77218F9BF8300429033 /* shotsViewController.m */,
 				C009D77418F9BF8300429033 /* Images.xcassets */,
 				C009D76318F9BF8300429033 /* Supporting Files */,
+				C083E96318F9C18D00146148 /* shotModel.h */,
+				C083E96418F9C18D00146148 /* shotModel.m */,
 			);
 			path = "shots-ios";
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C009D76D18F9BF8300429033 /* shotsAppDelegate.m in Sources */,
+				C083E96518F9C18D00146148 /* shotModel.m in Sources */,
 				C009D77318F9BF8300429033 /* shotsViewController.m in Sources */,
 				C009D76918F9BF8300429033 /* main.m in Sources */,
 			);
@@ -310,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C009D78818F9BF8300429033 /* shots_iosTests.m in Sources */,
+				C083E96618F9C18D00146148 /* shotModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
