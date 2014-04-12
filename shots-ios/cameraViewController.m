@@ -23,11 +23,7 @@
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         // No camera is available on the current device
         
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                              message:@"Device has no camera"
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"OK"
-                                                    otherButtonTitles: nil];
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Device has no camera" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [myAlertView show];
         
@@ -38,15 +34,6 @@
         [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
         
         [self presentViewController:picker animated:YES completion:NULL];
-        
-//        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"w00t"
-//                                                              message:@"Camera should show now."
-//                                                             delegate:nil
-//                                                    cancelButtonTitle:@"OK"
-//                                                    otherButtonTitles: nil];
-//        
-//        [myAlertView show];
-        [picker reloadInputViews];
     }
 }
 
@@ -55,20 +42,16 @@
     
     // Store photo
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
-//    [imageView setImage: image];
-    
-    
+    [imageView setImage: image];
 
-    // Call 'share' view
-    shareViewController *shareView = [self.storyboard instantiateViewControllerWithIdentifier:@"shareViewController"];
-    
-    [self presentViewController:shareView animated:YES completion:nil];
-    
-//    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:^{
+        // Transition to Share view
+       [self performSegueWithIdentifier: @"shareSegue" sender: self];
+    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    // User hit cancel
+    // User hit cancel - send them back to camera
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
@@ -77,14 +60,14 @@
     [super viewDidAppear:Animated];
 
     // Open camera and allow user to take a photo
-    [self TakePhoto];
+    // We have to use performSelector here or there are issues with view manipulation
+    [self performSelector:@selector(TakePhoto) withObject:nil afterDelay:0.3f];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
 }
 
 - (void)didReceiveMemoryWarning

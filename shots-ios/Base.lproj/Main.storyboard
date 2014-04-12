@@ -25,6 +25,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Uqn-P1-Oyi" id="Kor-XN-pTF"/>
+                        <segue destination="2g2-aA-RAk" kind="modal" identifier="shareSegue" id="vEZ-se-qgW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -33,6 +34,7 @@
         <!--Share View Controller-->
         <scene sceneID="WId-8o-tzN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyr-wr-27o" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="shareViewController" id="2g2-aA-RAk" customClass="shareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BPr-6T-OE7"/>
@@ -68,8 +70,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jFF-0i-lgn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyr-wr-27o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="519" y="31"/>
         </scene>
