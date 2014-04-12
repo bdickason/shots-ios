@@ -220,6 +220,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bradley Dickason";
 				TargetAttributes = {
+					C009D75818F9BF8300429033 = {
+						DevelopmentTeam = R23C8357YD;
+					};
 					C009D77918F9BF8300429033 = {
 						TestTargetID = C009D75818F9BF8300429033;
 					};
@@ -435,10 +438,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "shots-ios/shots-ios-Prefix.pch";
 				INFOPLIST_FILE = "shots-ios/shots-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -449,10 +455,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "shots-ios/shots-ios-Prefix.pch";
 				INFOPLIST_FILE = "shots-ios/shots-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

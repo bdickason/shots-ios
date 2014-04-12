@@ -36,6 +36,15 @@
         [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
         
         [self presentViewController:picker animated:YES completion:NULL];
+        
+//        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"w00t"
+//                                                              message:@"Camera should show now."
+//                                                             delegate:nil
+//                                                    cancelButtonTitle:@"OK"
+//                                                    otherButtonTitles: nil];
+//        
+//        [myAlertView show];
+        [picker reloadInputViews];
     }
 }
 
@@ -53,9 +62,9 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL) Animated {
     // Wait for view to appear before accessing camera
-    [super viewWillAppear:YES];
+    [super viewDidAppear:YES];
 
     // Open camera and allow user to take a photo
     [self TakePhoto];
