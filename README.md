@@ -11,6 +11,19 @@ iOS app for Shots
 4. Install Cocoapods: `sudo gem install cocoapods`
 5. Install dependencies: `pod install`
 6. Open the files `shots-ios.xcworkspace` in Xcode (NOT shots-ios.xcodeproj)
+7. Create a new file within Xcode at `/shots-ios/cfg/emv.m`
+8. Paste in the following into the file:
+
+````
+// (ignored by git) Houses environment variables
+
+#import "env.h"
+
+NSString * const PARSE_KEY = @"YOUR_KEY_HERE";
+NSString * const PARSE_APP_ID = @"YOUR_APP_ID_HERE";
+````
+
+8. Fill in your [Parse](http://parse.com/) key and app ID.
 
 
 # Capture Image
