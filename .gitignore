@@ -1,5 +1,6 @@
 # Shots
-shots-ios/cfg/
+env.h
+env.m
 
 # Xcode
 .DS_Store
