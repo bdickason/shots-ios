@@ -63,7 +63,7 @@
 		C009D78718F9BF8300429033 /* shots_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shots_iosTests.m; sourceTree = "<group>"; };
 		C0508B8C18FA3CC4008330B5 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
 		C0508B8D18FA3CE8008330B5 /* env.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = env.m; sourceTree = "<group>"; };
-		C083E95F18F9C05300146148 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C083E95F18F9C05300146148 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C083E96018F9C05300146148 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C083E96318F9C18D00146148 /* shotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shotModel.h; sourceTree = "<group>"; };
 		C083E96418F9C18D00146148 /* shotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shotModel.m; sourceTree = "<group>"; };
