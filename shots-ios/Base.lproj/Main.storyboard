@@ -83,6 +83,10 @@
                                     <action selector="copyToClipboard:" destination="2g2-aA-RAk" eventType="touchUpInside" id="D75-BE-Sy3"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l6U-Lp-2Qz">
+                                <rect key="frame" x="85" y="154" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -90,6 +94,7 @@
                     <connections>
                         <outlet property="copyToClipboard" destination="kO3-VO-sfg" id="fvP-M5-dh2"/>
                         <outlet property="imageView" destination="GYg-0r-Pc2" id="z1R-tg-AIp"/>
+                        <outlet property="progressBar" destination="l6U-Lp-2Qz" id="8ld-o5-5vS"/>
                         <outlet property="urlTextField" destination="1L5-Bn-wcP" id="R2w-HP-ZwY"/>
                     </connections>
                 </viewController>

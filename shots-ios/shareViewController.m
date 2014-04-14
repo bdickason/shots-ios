@@ -62,6 +62,9 @@
         } else {
             NSLog(@"Error, %@", err);
         }
+    } progressBlock:^(int percentDone) {
+        // Update loading indicator
+        progressBar.progress = (float)percentDone / 100;
     }];
 }
 
