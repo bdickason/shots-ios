@@ -12,6 +12,7 @@
     NSString *url;
 
     IBOutlet UIImageView  *imageView;
+    IBOutlet UITextField *urlTextField;
 }
 
 @property(nonatomic) UIImage *image; // Passed in from previous view

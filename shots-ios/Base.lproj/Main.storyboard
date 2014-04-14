@@ -34,7 +34,6 @@
         <!--Share View Controller-->
         <scene sceneID="WId-8o-tzN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyr-wr-27o" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="shareViewController" id="2g2-aA-RAk" customClass="shareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BPr-6T-OE7"/>
@@ -48,7 +47,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-Bn-wcP" userLabel="url Text Area">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-Bn-wcP" userLabel="urlTextField">
                                 <rect key="frame" x="112" y="288" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -73,8 +72,10 @@
                     <navigationItem key="navigationItem" id="jFF-0i-lgn"/>
                     <connections>
                         <outlet property="imageView" destination="GYg-0r-Pc2" id="z1R-tg-AIp"/>
+                        <outlet property="urlTextField" destination="1L5-Bn-wcP" id="R2w-HP-ZwY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyr-wr-27o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="519" y="31"/>
         </scene>

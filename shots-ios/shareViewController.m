@@ -22,9 +22,6 @@
     
     [Parse setApplicationId:PARSE_APP_ID clientKey:PARSE_KEY];
     
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    testObject[@"foo"] = @"bar";
-    
     // Convert image to Parse File (PFFile)
     NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
     PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
@@ -43,7 +40,10 @@
                 if(!err) {
                     // Success!
                     NSLog(@"Saved object to database successfully");
-                    NSLog(imageFile.url);
+
+                    // Update URL text field with image url: imageFile.url
+                    urlTextField.text =imageFile.url;
+
                 } else {
                     NSLog(@"Error: %@", err);
                 }
