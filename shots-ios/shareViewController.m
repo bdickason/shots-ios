@@ -22,9 +22,36 @@
     
     [Parse setApplicationId:PARSE_APP_ID clientKey:PARSE_KEY];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
+//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+//    testObject[@"foo"] = @"bar";
+    
+    // Convert image to Parse File (PFFile)
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
+    PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
+    
+    // Upload Image to server
+    [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *err) {
+        if(!err) {
+            // Success!
+            NSLog(@"Saved Image successfully!");
+            
+            // Create an object to represent the image in the database
+            PFObject *imageObj = [PFObject objectWithClassName:@"Image"];
+            [imageObj setObject:imageFile forKey:@"imageFile"];
+            
+            [imageObj saveInBackgroundWithBlock:^(BOOL succeeded, NSError *err) {
+                if(!err) {
+                    // Success!
+                    NSLog(@"Saved object to database successfully");
+                    NSLog(imageFile.url);
+                } else {
+                    NSLog(@"Error: %@", err);
+                }
+            }];
+        } else {
+            NSLog(@"Error, %@", err);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
