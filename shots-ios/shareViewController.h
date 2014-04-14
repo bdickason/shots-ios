@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface shareViewController : UIViewController <UINavigationControllerDelegate> {
-    NSString *url;
 
     IBOutlet UIImageView  *imageView;
     IBOutlet UITextField *urlTextField;
+    IBOutlet UIButton *copyToClipboard;
 }
 
 @property(nonatomic) UIImage *image; // Passed in from previous view

@@ -11,12 +11,21 @@
 
 #import "Parse/Parse.h"
 
+@interface shareViewController () {
+    NSString *_url;
+}
+@end
+
 @implementation shareViewController
 @synthesize image;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if(!_url) {
+        _url = [[NSString alloc] init];
+    }
+
 	// Do any additional setup after loading the view, typically from a nib.
     [imageView setImage: image];
     
@@ -41,8 +50,10 @@
                     // Success!
                     NSLog(@"Saved object to database successfully");
 
-                    // Update URL text field with image url: imageFile.url
-                    urlTextField.text =imageFile.url;
+                    // Update URL text field with image url
+                    _url = imageFile.url;
+                    
+                    urlTextField.text = imageFile.url;
 
                 } else {
                     NSLog(@"Error: %@", err);
@@ -52,6 +63,11 @@
             NSLog(@"Error, %@", err);
         }
     }];
+}
+
+- (IBAction)copyToClipboard:(id)sender {
+    UIPasteboard *pb = [UIPasteboard generalPasteboard];
+    [pb setString:_url];
 }
 
 - (void)didReceiveMemoryWarning
