@@ -14,6 +14,8 @@
     IBOutlet UITextField *urlTextField;
     IBOutlet UIButton *copyToClipboard;
     IBOutlet UIProgressView *progressBar;
+    IBOutlet UITextField *successMessage;
+    
 }
 
 @property(nonatomic) UIImage *image; // Passed in from previous view

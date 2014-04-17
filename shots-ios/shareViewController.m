@@ -25,8 +25,12 @@
     if(!_url) {
         _url = [[NSString alloc] init];
     }
-
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Disable UI Controls
+    [successMessage setEnabled:false];
+    [copyToClipboard setEnabled:false];
+    
+    // Display image
     [imageView setImage: image];
     
     [Parse setApplicationId:PARSE_APP_ID clientKey:PARSE_KEY];
@@ -54,6 +58,10 @@
                     _url = imageFile.url;
                     
                     urlTextField.text = imageFile.url;
+                    
+                    // Re-enable UI controls
+                    [successMessage setEnabled:true];
+                    [copyToClipboard setEnabled:true];
 
                 } else {
                     NSLog(@"Error: %@", err);
