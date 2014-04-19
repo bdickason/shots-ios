@@ -21,7 +21,7 @@
 		C009D77E18F9BF8300429033 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C009D76018F9BF8300429033 /* UIKit.framework */; };
 		C009D78618F9BF8300429033 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C009D78418F9BF8300429033 /* InfoPlist.strings */; };
 		C009D78818F9BF8300429033 /* shots_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C009D78718F9BF8300429033 /* shots_iosTests.m */; };
-		C0508B8E18FA3CE8008330B5 /* env.m in Sources */ = {isa = PBXBuildFile; fileRef = C0508B8D18FA3CE8008330B5 /* env.m */; };
+		C060A15419020B6C0034F770 /* env.m in Sources */ = {isa = PBXBuildFile; fileRef = C060A15319020B6C0034F770 /* env.m */; };
 		C083E96118F9C05300146148 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C083E95F18F9C05300146148 /* Podfile */; };
 		C083E96218F9C05300146148 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C083E96018F9C05300146148 /* README.md */; };
 		C083E96518F9C18D00146148 /* shotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C083E96418F9C18D00146148 /* shotModel.m */; };
@@ -62,7 +62,7 @@
 		C009D78518F9BF8300429033 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C009D78718F9BF8300429033 /* shots_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shots_iosTests.m; sourceTree = "<group>"; };
 		C0508B8C18FA3CC4008330B5 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
-		C0508B8D18FA3CE8008330B5 /* env.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = env.m; sourceTree = "<group>"; };
+		C060A15319020B6C0034F770 /* env.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = env.m; sourceTree = "<group>"; };
 		C083E95F18F9C05300146148 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C083E96018F9C05300146148 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C083E96318F9C18D00146148 /* shotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shotModel.h; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				C0508B8C18FA3CC4008330B5 /* env.h */,
-				C0508B8D18FA3CE8008330B5 /* env.m */,
+				C060A15319020B6C0034F770 /* env.m */,
 			);
 			path = cfg;
 			sourceTree = "<group>";
@@ -328,8 +328,8 @@
 			files = (
 				C08ECE3C18F9D1D900D6D7CE /* shareViewController.m in Sources */,
 				C009D76D18F9BF8300429033 /* shotsAppDelegate.m in Sources */,
+				C060A15419020B6C0034F770 /* env.m in Sources */,
 				C083E96518F9C18D00146148 /* shotModel.m in Sources */,
-				C0508B8E18FA3CE8008330B5 /* env.m in Sources */,
 				C009D77318F9BF8300429033 /* cameraViewController.m in Sources */,
 				C009D76918F9BF8300429033 /* main.m in Sources */,
 			);

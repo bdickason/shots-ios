@@ -30,9 +30,6 @@
     [successMessage setEnabled:false];
     [copyToClipboard setEnabled:false];
     
-    // Display image
-    [imageView setImage: image];
-    
     [Parse setApplicationId:PARSE_APP_ID clientKey:PARSE_KEY];
     
     // Convert image to Parse File (PFFile)
@@ -53,6 +50,9 @@
                 if(!err) {
                     // Success!
                     NSLog(@"Saved object to database successfully");
+                    
+                    // Display image
+                    [imageView setImage: image];
 
                     // Update URL text field with image url
                     _url = imageFile.url;
